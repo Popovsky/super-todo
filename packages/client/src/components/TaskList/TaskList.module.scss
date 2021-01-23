@@ -1,0 +1,64 @@
+$checkbox-size: 15px;
+
+.taskList {
+  margin: 10px -20px;
+  list-style-type: none;
+}
+
+.taskItem {
+  position: relative;
+  padding: 10px 30px;
+}
+
+.taskItem:nth-child(even) {
+  background-color: #ececec;
+}
+
+.input {
+  display: none;
+  cursor: pointer;
+}
+
+.labelCheck:before {
+  position: absolute;
+  left: 5px;
+  top: 21px;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #00a200;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input:checked + .labelCheck:after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  top: 23px;
+  left: 11px;
+  position: absolute;
+  cursor: pointer;
+  border: solid #00a200;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.removeBtn {
+  position: absolute;
+  top: 13px;
+  right: 6px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 700;
+  color: red;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+}

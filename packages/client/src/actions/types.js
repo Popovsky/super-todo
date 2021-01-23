@@ -1,0 +1,7 @@
+const ACTION_TYPE = {
+  ADD_TASK: 'ADD_TASK',
+  REMOVE_TASK: 'REMOVE_TASK',
+  CHECK_TASK: 'CHECK_TASK',
+};
+
+export default ACTION_TYPE;
